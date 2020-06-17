@@ -11,10 +11,10 @@ public class Balls {
             if (ballsCount == 0) {
                 System.out.println("Total number of balls should be greater than 0");
             } else {
-                System.out.println(countTotal(ballsCount));
+                System.out.println("Total number of ways to remove the balls from the bag : " + countTotal(ballsCount));
             }
         } catch (InputMismatchException e) {
-            System.out.println("Input type mismatch. Please enter integer values only (greater than 0)");
+            System.out.println("Input type mismatch. Please enter integer values only");
         } catch (Exception e) {
             System.out.println("Something went wrong. Debug error : " + e.getLocalizedMessage());
         }
